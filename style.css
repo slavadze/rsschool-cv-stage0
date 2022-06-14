@@ -16,20 +16,34 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: #4d2323;
+  color: black;
 }
 
 html {
   scroll-behavior: smooth; 
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
-  border: 1px solid white;
   background-color: orange;
 }
 
+.header a, .footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover, .footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .main {
-  border: 1px solid red;
+  margin: 20px 150px;
 }
 
 .main-container {
@@ -38,8 +52,11 @@ html {
 }
 
 .footer {
-  border: 1px solid red;
+  color: white;
+  background-color: grey;
+  padding: 20px 150px;
 }
+
 
 .container {
   max-width: 1440px;
@@ -60,7 +77,9 @@ html {
 }
 
 .section {
-  width: 50%;
+  display: block;
+  width: 48%;
+  float: left;
 }
 
 .section-item {
@@ -79,20 +98,20 @@ html {
   border-radius: 50%;
 }
 .section-item a {
-  color: #829985;
+  color: blue;
   text-decoration: none;  
   transition: color 0.5s;
 }
 .section-item a:hover {
-  color: #4d2323;
+  color: grey;
 }
 
 .section-title {
   font-size: 20px;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform:capitalize;
   letter-spacing: 5px;
-  color: #829985;
+  color: orange;
 }
 
 .link {
@@ -107,4 +126,31 @@ html {
 
 .avatar {
   width: 150px;
+}
+
+.logo {
+  width: 150px;
+  float: right;
+}
+
+.contacts, .skills {
+  list-style-type: none;
+}
+
+.code {
+  border-left: 3px solid grey;
+  margin-left: 20px;
+  padding-left: 10px;
+  background-color:burlywood;
+  font-family: monospace;
+}
+
+.left {
+  float: left;
+  
+}
+
+.right {
+  float: right;
+  padding-top: 20px;
 }

@@ -7,6 +7,7 @@
     <title>cv</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 <body>
     <header class="header">
@@ -28,52 +29,72 @@
     
     <main class="main main-container">
         <div class="container">
-            <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
-            <p class="section" id="profile">
+            <section class="section" id="profile">
+                <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
                 <h1 class="section-title">Profile</h1>
                 <p>Viachaslau Stolp</p>
             </section>
             <section class="section" id="contacts">
                 <h2 class="section-title">Contacts</h2>
-                <p>Phone: +375296354045, e-mail: 6354045@mail.ru, discord: slavadze</p>
+                <ul class="contacts">
+                    <li><i class="fa fa-location-arrow"></i>...Minsk, Belarus</li>
+                    <li><i class="fa fa-phone"></i>...Phone: +375296354045</li>
+                    <li><i class="fa fa-envelope"></i>...Email: 6354045@mail.ru</li> 
+                    <li><i class="fa fa-user-friends"></i>...Discord: slavadze</li>
+                </ul>
             </section>
             <section class="section" id="summary">
                 <h2 class="section-title">Summary</h2>
                 <p>Brief information about me (my goal is to acquire new knowledge and master a new profession, my strengths are purposefulness, perseverance, a mathematical mindset, my main work experience is related to managing a small company for 16 years)</p>
-                <p>My main work experience is related to managing a small company for 16 years</p>
             </section>
             <section class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
-                <p>Python, django, github, html, css</p>
+                <ul class="skills">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Github</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                </ul>
             </section>
             <section class="section" id="code">
                 <h2 class="section-title">Code</h2>
-                <p>function multiply(a, b){
+                <code class="code">function multiply(a, b) {
                     return a * b
                 }
-                </p>
+                </code>
             </section>
             <section class="section" id="courses">
                 <h2 class="section-title">Courses</h2>
-                <p>BSEU faculty of marketing specialization logistics and basics course Python</p>
+                <p>Basics course Python</p>
             </section>
             <section class="section" id="projects">
-                <h2 class="section-title">Prijects</h2>
+                <h2 class="section-title">Projects</h2>
+                <p>You can see my projects <a href="https://github.com/slavadze/">here</a></p>
             </section>
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
-                <p>BSEU faculty of marketing specialization logistics and basics course Python</p>
+                <p>BSEU faculty of marketing specialization logistics</p>
             </section>
-            <section class="section" id="languages">
-                <h2 class="section-title">Languages</h2>
-                <p>Pre Intermediate</p>
+            <section class="section" id="english">
+                <h2 class="section-title">English</h2>
+                <p>B1- Pre-Intermediate</p>
             </section>
         </div>
     </main>
     
     <footer class="footer">
-        <div class="container"></div>
-        <h1>Footer</h1>
+        <div class="container">
+            <div class="left">
+                <p>© 2022</p>
+                <a href="https://github.com/slavadze/">My Github</a>
+            </div>
+            <div class="right">
+                <a href="https://rs.school/js/">
+                    <img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="rs_school">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
