@@ -5,26 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
     <title>Travel</title>
 </head>
 <body>
+    
     <header class="header">
+        <span class="logo">Travel Portal</span>
         <nav class="nav">
             <ul class="topmenu">
                 <li>
-                    <a>How It Work</a>
+                    <a href="#preveiw">How It Work</a>
                 </li>
                 <li>
-                    <a>Plan Your Trip</a>
+                    <a href="#steps">Plan Your Trip</a>
                 </li>
                 <li>
-                    <a>Destinations</a>
+                    <a href="#destinations">Destinations</a>
                 </li>
                 <li>
-                    <a>Travel Stories</a>
+                    <a href="#stories">Travel Stories</a>
                 </li>
             </ul>
         </nav>
+        <button class="button">
+            <span class="login">Login</span>
+        </button>
     </header>
+    <main>
+        <!-- Begin Preview -->
+        <section id="preview">
+        <h1>Explore the beauty of the World</h1>
+        <p class="subtitle">Receive personalized recommendations for countries, hotels, activities and more</p>
+        <div class="search">
+            <p class="search_title">What would you like to do?</p>
+            <button class="button">
+                <span class="login">Start Planning</span>
+            </button>
+        </div>
+        </section>
+
+        <!-- Begin Steps -->
+        <section id="steps">
+            <h2>3 Steps to the perfect trip</h2>
+            <div class="icon">
+                <img src="assets/img/bike.png" alt="bike">
+            </div>
+            <p class="p">Tell us what you want to do</p>
+            <div class="icon">
+                <img src="assets/img/calc.png" alt="calc">
+            </div>
+            <p class="p">Tell us what you want to do</p>
+            <div class="icon">
+                <img src="assets/img/plane.png" alt="plane">
+            </div>
+            <p class="p">Tell us what you want to do</p>
+        </section>
+        
+        <!-- Begin Destinations -->
+        <section id="destinations">
+            <h3>Poular destinations</h3>
+            <img src="assets/img/spain.jpg" alt="">
+        </section>
+
+        <!-- Begin Stories -->
+        <section id="stories">
+            <h3>Travel stories</h3>
+        </section>
+    </main>
 </body>
 </html>
