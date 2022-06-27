@@ -13,6 +13,10 @@
      src: url("assets/fonts/Aleo-Regular.ttf");
    }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1440px;
     height: 3735px;
@@ -23,12 +27,12 @@ body {
     padding: 0;
 }
 
+
 h1 {
-    position: absolute;
+    position: relative;
     width: 892px;
-    height: 422px;
     left: 120px;
-    top: 122px;
+    top: -30px;
 
     font-family: 'Aleo';
     font-style: normal;
@@ -48,45 +52,43 @@ h2, h3 {
     color: #F2785C;
 }
 
+h4 {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin-bottom: 24px;
+}
+
 .header {
+    display: flex;
+    flex-direction: row;
     font-family: 'Red Hat Text';
-    position: absolute;
-    width: 1440px;
+    position: relative;
     height: 90px;
-    left: -10px;
-    top: 0px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
-.logo {
-    position: absolute;
-    width: 180px;
-    height: 31px;
-    left: 145px;
-    top: 25px;
+.iconLogo {
+    padding: 26px 5px 0 110px;
+}
 
+.textLogo {
+    
     font-family: 'Magra';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 39px;
-    color: #FFFFFF;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 42px;
-    position: absolute;
+    
+    padding: 20px 0 0 84px;
     height: 21px;
-    left: 484px;
-    top: 35px;
+    
 }
-
-/* Travel Stories */
 
 .nav a {
     font-family: 'Red Hat Text';
@@ -98,6 +100,10 @@ h2, h3 {
     color: #FFFFFF;
 }
 
+.nav a:hover {
+    color: #0D606F;
+}
+
 .nav ul li {
     display: inline;
     list-style-type: none;
@@ -107,49 +113,59 @@ h2, h3 {
 .login {
     width: 43px;
     height: 21px;
-    
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
+    padding: 25px 0 0 200px;
+}   
 
-    color: #FFFFFF;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+#preview {
+    position: relative;
 }
 
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    position: sticky;
-    width: 103px;
+.button, .button2 {
+    min-width: 103px;
     height: 41px;
-    left: 1207px;
-    top: 25px;
-
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border: 0px;
     border-radius: 10px;
 }
 
-.subtitle {
-    position: absolute;
-    width: 723px;
-    height: 24px;
-    left: 120px;
-    top: 346px;
+.button:hover, .button2:hover {
+    background-color: #F2785C;
+}
 
+.button2 {
+    height: 58px;
+}
+
+.button span {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.button2 img {
+    padding: 9.5px 10px 9.5px 31px;
+}
+
+.button2 span {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    position: relative;
+    max-width: 1200px;
+    top: -66px;
+    left: 120px;
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
@@ -159,48 +175,50 @@ h2, h3 {
 
 
 .search {
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
     width: 892px;
     height: 95px;
+    top: -40px;
     left: 120px;
-    top: 416px;
-
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
 
 .search_title {
-    padding-left: 41px;
+    width: 560px;
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
-
+    padding: 9px 0 0 41px;
     color: #F2785C;
 }
 
+.right {
+    float: right;
+    padding: 18px 18px 18px 0;
+}
+
 #steps {
-    position: absolute;
+    position: relative;
     width: 1177px;
     height: 247px;
     left: 131px;
-    top: 845px;
+    top: 315px;
 }
 
-#destinations {
-    position: absolute;
-    width: 2520px;
-    height: 1042px;
-    left: -540px;
-    top: 1189px;
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#stories {
-    position: absolute;
-    width: 1201px;
-    height: 1322px;
-    left: 119px;
-    top: 2311px;
+.step {
+    height: 60px;
+    width:calc( ( 100% - 40px ) / 3 );
+    margin:0 0 20px;
 }
 
 .icon {
@@ -208,19 +226,129 @@ h2, h3 {
     height: 100px;
     background: #F2785C;
     border-radius: 16px;
+    margin-left: 160px;
 }
 
-.p {
-    position: absolute;
-    width: 247px;
-    height: 24px;
-    left: 0px;
-    top: 130px;
-
+.step p {
+    padding: 0 0 0 50px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
     color: #0D606F;
 }
+
+.step img {
+    padding: 23px;
+}
+
+#destinations {
+    position: relative;
+    width: 1440px;
+    height: 1042px;
+    left: 1px;
+    top: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#destinations p {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 690px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.image {
+    position: relative;
+    height: 60px;
+    width: calc( ( 100% - 40px ) / 3 );
+    margin: 0 0 20px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.ellipse1, .ellipse2, .ellipse3 {
+    position: relative;
+    top: 800px;
+    left: 700px;
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.ellipse2 {
+    background-color: rgba(242, 120, 92);
+}
+
+.ellipse1:hover, .ellipse3:hover {
+    background-color: rgba(242, 120, 92);
+    cursor: pointer;
+}
+
+#stories {
+    position: relative;
+    z-index: 1;
+    width: 1440px;
+    height: 1322px;
+    left: 119px;
+    top: 511px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#stories img {
+    float: left;
+    padding-right: 40px;
+}
+
+#stories p, a {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0D606F;
+}
+
+#stories a {
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.footer {
+    position: sticky;
+    z-index: 0;
+    height: 800px;
+    top: 3688px;
+    background: url(assets/img/bg-footer.jpg);
+}
+
+.footer p {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+}
+
+
+
+
+/*
+console.log(
+    '1. Вёрстка валидная +10\n2. Вёрстка семантическая +20\n3. Вёрстка соответствует макету +48\n4. Требования к css + 12\n5. Интерактивность, реализуемая через css +20\nИтого: 110 баллов'
+
+);
+*/
