@@ -27,13 +27,15 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 
 h1 {
     position: relative;
     width: 892px;
     left: 120px;
-    top: -30px;
-
+    top: 30px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
@@ -50,16 +52,7 @@ h2, h3 {
     text-transform: uppercase;
     line-height: 53px;
     color: #F2785C;
-}
-
-h4 {
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-    color: #0D606F;
-    margin-bottom: 24px;
+    padding: 0 0 40px 0;
 }
 
 .header {
@@ -85,7 +78,7 @@ h4 {
 
 .nav {
     
-    padding: 20px 0 0 84px;
+    padding: 20px 0 0 122px;
     height: 21px;
     
 }
@@ -98,6 +91,7 @@ h4 {
     text-decoration: none;
     line-height: 21px;
     color: #FFFFFF;
+    transition: 0.2s linear;
 }
 
 .nav a:hover {
@@ -120,13 +114,21 @@ h4 {
     position: relative;
 }
 
+.wrap_button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 37px;
+}
+
 .button, .button2 {
-    min-width: 103px;
-    height: 41px;
+    display: flex;
+    align-items: center;
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border: 0px;
     border-radius: 10px;
+    transition: 0.2s linear;
+    cursor: pointer;
 }
 
 .button:hover, .button2:hover {
@@ -164,7 +166,7 @@ h4 {
 .subtitle {
     position: relative;
     max-width: 1200px;
-    top: -66px;
+    top: 26px;
     left: 120px;
     font-family: 'Aleo';
     font-style: italic;
@@ -181,7 +183,7 @@ h4 {
     position: relative;
     width: 892px;
     height: 95px;
-    top: -40px;
+    top: 40px;
     left: 120px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
@@ -207,7 +209,7 @@ h4 {
     width: 1177px;
     height: 247px;
     left: 131px;
-    top: 315px;
+    top: 388px;
 }
 
 .wrap {
@@ -247,9 +249,7 @@ h4 {
 #destinations {
     position: relative;
     width: 1440px;
-    height: 1042px;
-    left: 1px;
-    top: 400px;
+    top: 430px;
     text-align: center;
     overflow: hidden;
 }
@@ -267,24 +267,37 @@ h4 {
     line-height: 42px;
 }
 
-.image {
+.wrap_gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.gallery_item {
     position: relative;
-    height: 60px;
-    width: calc( ( 100% - 40px ) / 3 );
     margin: 0 0 20px;
     z-index: 0;
     cursor: pointer;
 }
 
+.gallery_item img {
+    border-radius: 16px;
+    max-width: 800px;
+}
+
+.wrap_ellipse {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
 .ellipse1, .ellipse2, .ellipse3 {
-    position: relative;
-    top: 800px;
-    left: 700px;
     width: 20px;
     height: 20px;
     background: rgba(242, 120, 92, 0.5);
     border-radius: 10px;
-    margin-right: 15px;
 }
 
 .ellipse2 {
@@ -298,18 +311,54 @@ h4 {
 
 #stories {
     position: relative;
+    top: 400px;
     z-index: 1;
-    width: 1440px;
-    height: 1322px;
-    left: 119px;
-    top: 511px;
+    padding-top: 80px;
+}
+
+.background {
+    position: relative;
+    background: url(assets/img/bg-footer.jpg) no-repeat;
+    width: 100%;
+    padding-bottom: 103px;
+}
+
+.wrap_stories {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-#stories img {
-    float: left;
-    padding-right: 40px;
+.articles {
+    padding-top: 40px;
 }
+
+.article {
+    display: flex;
+    margin: 0 0 30px 30px;
+}
+
+.stories_title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin-bottom: 24px;
+}
+
+
+.text_stories {
+    margin-left: 40px;
+    max-width: 760px;
+}
+
+#stories img {
+    border-radius: 16px;
+    transition: 0.1s linear;
+    filter: drop-shadow(0px 4px 4 px #0D606F)
+}
+
 
 #stories p, a {
     font-family: 'Aleo';
@@ -317,7 +366,6 @@ h4 {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
     color: #0D606F;
 }
 
@@ -327,11 +375,31 @@ h4 {
 }
 
 .footer {
-    position: sticky;
-    z-index: 0;
-    height: 800px;
-    top: 3688px;
-    background: url(assets/img/bg-footer.jpg);
+    display: flex;
+    position: relative;
+    top: 287px;
+    height: 61px;
+    z-index: 1;
+}
+
+.wrap_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 19px 30px 0 30px;
+}
+
+.footer ul, li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-right: 42px;
 }
 
 .footer p {
@@ -340,7 +408,11 @@ h4 {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
+}
 
+.footer img {
+    max-width: 80px;
+    transition: 0.2s linear;
 }
 
 
