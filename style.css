@@ -27,7 +27,7 @@ body {
     color: #FFFFFF;
     background: #FFFFFF;
     background: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1-2.png) no-repeat;
-    background-size: contain;
+    background-size: 1440px;
     margin: 0;
     padding: 0;
 }
@@ -57,7 +57,12 @@ h2, h3 {
     text-transform: uppercase;
     line-height: 53px;
     color: #F2785C;
-    padding: 0 0 40px 0;
+    padding: 80px 0 40px 0;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto 0;
 }
 
 .header {
@@ -86,7 +91,7 @@ h2, h3 {
 }
 
 .nav {
-    padding: 0 100px 0 100px;
+    padding: 0 125px 0 125px;
 }
 
 .nav a {
@@ -211,7 +216,7 @@ h2, h3 {
 
 #steps {
     position: relative;
-    top: 300px;
+    top: 308px;
     text-align: center;
 }
 
@@ -223,7 +228,7 @@ h2, h3 {
 
 .step {
     height: 60px;
-    width:calc( ( 100% - 40px ) / 3 );
+    width: 30%;
     margin:0 0 20px;
 }
 
@@ -252,7 +257,7 @@ h2, h3 {
 #destinations {
     position: relative;
     max-width: 1440px;
-    top: 430px;
+    top: 375px;
     text-align: center;
     overflow: hidden;
 }
@@ -314,9 +319,8 @@ h2, h3 {
 
 #stories {
     position: relative;
-    top: 400px;
+    top: 330px;
     z-index: 1;
-    padding-top: 80px;
 }
 
 .background {
@@ -380,7 +384,7 @@ h2, h3 {
 .footer {
     display: flex;
     position: relative;
-    top: 287px;
+    top: 218px;
     height: 61px;
     z-index: 1;
 }
@@ -390,7 +394,7 @@ h2, h3 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 19px 30px 0 30px;
+    padding: 20px 30px 0 30px;
 }
 
 .footer ul, li {
@@ -402,7 +406,7 @@ h2, h3 {
 }
 
 .footer li {
-    margin-right: 42px;
+    margin-right: 20px;
 }
 
 .footer p {
