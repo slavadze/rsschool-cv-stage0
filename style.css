@@ -3,26 +3,31 @@
      src: url("assets/fonts/RedHatText-VariableFont_wght.ttf");
    }
 
-   @font-face {
+@font-face {
     font-family: 'Magra';
      src: url("assets/fonts/Magra-Regular.ttf");
    }
 
-   @font-face {
+@font-face {
     font-family: 'Aleo';
      src: url("assets/fonts/Aleo-Regular.ttf");
    }
+
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    width: 1440px;
-    height: 3735px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1440px;
+    min-height: 100vh;
     color: #FFFFFF;
     background: #FFFFFF;
-    background: no-repeat url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1-2.png);
+    background: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1-2.png) no-repeat;
+    background-size: contain;
     margin: 0;
     padding: 0;
 }
@@ -57,7 +62,6 @@ h2, h3 {
 
 .header {
     display: flex;
-    flex-direction: row;
     font-family: 'Red Hat Text';
     position: relative;
     height: 90px;
@@ -65,22 +69,24 @@ h2, h3 {
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
+.wpap_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .iconLogo {
-    padding: 26px 5px 0 110px;
+    padding-left: 110px;
 }
 
 .textLogo {
-    
     font-family: 'Magra';
     font-weight: 600;
     font-size: 32px;
 }
 
 .nav {
-    
-    padding: 20px 0 0 122px;
-    height: 21px;
-    
+    padding: 0 100px 0 100px;
 }
 
 .nav a {
@@ -105,13 +111,12 @@ h2, h3 {
 }
 
 .login {
-    width: 43px;
-    height: 21px;
-    padding: 25px 0 0 200px;
+    padding: 0;
 }   
 
 #preview {
     position: relative;
+    max-width: 1100px;
 }
 
 .wrap_button {
@@ -206,15 +211,14 @@ h2, h3 {
 
 #steps {
     position: relative;
-    width: 1177px;
-    height: 247px;
-    left: 131px;
-    top: 388px;
+    top: 300px;
+    text-align: center;
 }
 
-.wrap {
+.steps_container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .step {
@@ -232,7 +236,6 @@ h2, h3 {
 }
 
 .step p {
-    padding: 0 0 0 50px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
@@ -248,7 +251,7 @@ h2, h3 {
 
 #destinations {
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     top: 430px;
     text-align: center;
     overflow: hidden;
