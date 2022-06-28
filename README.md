@@ -1,2 +1,1 @@
-https://slavadze.github.io/rsschool-cv/cv
-https://slavadze.github.io/rsschool-cv/
+https://rolling-scopes-school.github.io/slavadze/travel/
